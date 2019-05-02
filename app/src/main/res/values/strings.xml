@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">Lichess</string>
+  <string name="hint_placemarkTitle">Lichess Link</string>
+  <string name="hint_placemarkDescription">White Player</string>
+  <string name="hint_placemarkDescription2">Black Player</string>
+  <string name="button_addPlacemark">Add Game</string>
+  <string name="menu_addPlacemark">Add</string>
+  <string name="menu_cancelPlacemark">Cancel</string>
+  <string name="enter_placemark_title"> Please enter a Lichess Title </string>
+  <string name="save_placemark"> Save Game </string>
+  <string name="button_addImage"> Add Image </string>
+  <string name="select_placemark_image">Select chess game image</string>
+  <string name="change_placemark_image">Change placemark image</string>
+  <string name="button_location">Set Location</string>
+  <string name="title_activity_maps">Map</string>
+  <string name="menu_deletePlacemark">Delete</string>
+  <string name="title_activity_placemark_maps">Map of all Placemarks</string>
+  <string name="google_maps_key">AIzaSyBY3c7RFvwzs06juEg0nzIU7PVERTIV3U8</string>
+
+</resources>
