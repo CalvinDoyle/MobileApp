@@ -30,6 +30,8 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
     loadPlacemarks()
   }
 
+
+
   private fun loadPlacemarks() {
     showPlacemarks( app.placemarks.findAll())
   }
@@ -47,7 +49,7 @@ class PlacemarkListActivity : AppCompatActivity(), PlacemarkListener {
   override fun onOptionsItemSelected(item: MenuItem?): Boolean {
     when (item?.itemId) {
       R.id.item_add -> startActivityForResult<PlacemarkActivity>(0)
-      /**R.id.item_map -> startActivity<PlacemarkMapsActivity>()**/
+      R.id.item_map -> startActivity<PlacemarkMapsActivity>()
     }
     return super.onOptionsItemSelected(item)
   }

@@ -63,7 +63,7 @@
           android:textColor="@color/colorPrimaryDark"
           android:textSize="14sp" />
 
-          <android.support.design.widget.TextInputEditText
+        <android.support.design.widget.TextInputEditText
               android:id="@+id/description2"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -75,6 +75,20 @@
               android:padding="8dp"
               android:textColor="@color/colorPrimaryDark"
               android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/description3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="@string/hint_placemarkDescription3"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            tools:ignore="DuplicateIds" />
 
           <Button
           android:id="@+id/chooseImage"
@@ -95,17 +109,32 @@
           app:srcCompat="@mipmap/ic_launcher"/>
 
         <Button
-          android:id="@+id/btnAdd"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_margin="16dp"
-          android:background="@color/colorAccent"
-          android:paddingBottom="8dp"
-          android:paddingTop="8dp"
-          android:stateListAnimator="@null"
-          android:text="@string/button_addPlacemark"
-          android:textColor="@color/colorPrimary"
-          android:textSize="16sp" />
+            android:id="@+id/placemarkLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:stateListAnimator="@null"
+            android:text="@string/button_location"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:stateListAnimator="@null"
+            android:text="@string/button_addPlacemark"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
 
       </LinearLayout>
     </ScrollView>

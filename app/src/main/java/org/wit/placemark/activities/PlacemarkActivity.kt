@@ -40,6 +40,8 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger {
       placemark = intent.extras.getParcelable<PlacemarkModel>("placemark_edit")
       placemarkTitle.setText(placemark.title)
       description.setText(placemark.description)
+      description2.setText(placemark.description2)
+      description3.setText(placemark.description3)
       placemarkImage.setImageBitmap(readImageFromPath(this, placemark.image))
       chooseImage.setText(R.string.change_placemark_image)
       btnAdd.setText(R.string.save_placemark)
@@ -48,6 +50,8 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger {
     btnAdd.setOnClickListener() {
       placemark.title = placemarkTitle.text.toString()
       placemark.description = description.text.toString()
+      placemark.description2 = description2.text.toString()
+      placemark.description3 = description3.text.toString()
       if (placemark.title.isEmpty()) {
         toast(R.string.enter_placemark_title)
       } else {
@@ -67,7 +71,7 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger {
       showImagePicker(this, IMAGE_REQUEST)
     }
 
-    /**placemarkLocation.setOnClickListener {
+    placemarkLocation.setOnClickListener {
       val location = Location(52.245696, -7.139102, 15f)
       if (placemark.zoom != 0f) {
         location.lat = placemark.lat
@@ -75,7 +79,7 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger {
         location.zoom = placemark.zoom
       }
       startActivityForResult(intentFor<MapsActivity>().putExtra("location", location), LOCATION_REQUEST)
-    }**/
+    }
   }
 
   override fun onCreateOptionsMenu(menu: Menu?): Boolean {
